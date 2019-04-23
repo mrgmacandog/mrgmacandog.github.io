@@ -1,0 +1,12 @@
+.jumbotron {
+    height: 100vh;
+}
+
+.jumbotron > .container, #display {
+    height: 100%;
+}
+
+#display {
+    text-align: center;
+    justify-content: center; /* vertical */
+}
