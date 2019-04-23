@@ -9,10 +9,13 @@
 }
 
 #display {
-    text-align: center;
     justify-content: center;
 }
 
-h2 {
+#display, h2 {
     text-align: center;
+}
+
+.section {
+    margin-top: 25px;
 }
