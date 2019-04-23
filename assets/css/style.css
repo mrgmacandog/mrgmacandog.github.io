@@ -1,5 +1,7 @@
 .jumbotron {
     height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 .jumbotron > .container, #display {
@@ -8,5 +10,9 @@
 
 #display {
     text-align: center;
-    justify-content: center; /* vertical */
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
 }
