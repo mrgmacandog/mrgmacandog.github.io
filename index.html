@@ -35,31 +35,49 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary sticky-top">
-        <a class="navbar-brand" href="#display">MRGM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li id="about-link" class="nav-item">
-                    <a class="nav-link">About</a>
-                </li>
-                <li id="portfolio-link" class="nav-item">
-                    <a class="nav-link">Portfolio</a>
-                </li>
-                <li id="contact-link" class="nav-item">
-                    <a class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="sticky-top bg-secondary">
+        <nav class="container navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#display">MRGM</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li id="about-link" class="nav-item">
+                        <a class="nav-link">About</a>
+                    </li>
+                    <li id="portfolio-link" class="nav-item">
+                        <a class="nav-link">Portfolio</a>
+                    </li>
+                    <li id="contact-link" class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
     <!-- Content -->
     <div class="container">
-        <div id="about" class="row section" style="height: 1000px">
+        <div id="about" class="row section">
             <div class="col-md-12">
                 <h2>About</h2>
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center flex-column">
+                        <img id="my-photo" src="assets/images/composite.jpg" alt="Martin Macandog">
+                        <p>Who am I?</p>
+                        <p>
+                            I'm an aspiring Full-Stack Web Developer who loves creating easy to use and intutive applications for users. I'm currently a student from the Februray cohort at the Univeristy of Washington Coding Bootcamp that is graduating this August.
+                        </p>
+                        <p>
+                            I'm also a recent University of Washington Geographic Information Systems graduate (June 2018) who loves utilizing spatial data and web mapping into my projects.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p></p>
+                    </div>
+                </div>
             </div>
         </div>
 
