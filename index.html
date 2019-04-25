@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 
@@ -57,39 +59,116 @@
         </nav>
     </div>
 
-    <!-- Content -->
-    <div class="container">
-        <div id="about" class="row section">
-            <div class="col-md-12">
-                <h2>About</h2>
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-center flex-column">
-                        <img id="my-photo" src="assets/images/composite.jpg" alt="Martin Macandog">
-                        <p>Who am I?</p>
-                        <p>
-                            I'm an aspiring Full-Stack Web Developer who loves creating easy to use and intutive applications for users. I'm currently a student from the Februray cohort at the Univeristy of Washington Coding Bootcamp that is graduating this August.
-                        </p>
-                        <p>
-                            I'm also a recent University of Washington Geographic Information Systems graduate (June 2018) who loves utilizing spatial data and web mapping into my projects.
-                        </p>
-                    </div>
+    <div id="about-div">
+        <div class="container">
+            <div id="about" class="row section">
+                <div class="col-md-12">
+                    <h2 class="section-header">About</h2>
+                    <div class="row">
+                        <div class="col-md-6 d-flex align-items-center flex-column">
+                            <img id="my-photo" src="assets/images/composite.jpg" alt="Martin Macandog">
+                            <p>Who am I?</p>
+                            <p>
+                                I'm an aspiring Full-Stack Web Developer who loves creating easy to use and intutive applications for users. I'm currently a student from the Februray cohort at the Univeristy of Washington Coding Bootcamp that is graduating this August.
+                            </p>
+                            <p>
+                                I'm also a recent University of Washington Geographic Information Systems graduate (June 2018) who loves utilizing spatial data and web mapping into my projects.
+                            </p>
+                        </div>
 
-                    <div class="col-md-6">
-                        <p></p>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p>HTML</p>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="far fa-circle"></i>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p>CSS</p>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="far fa-circle"></i>
+                                    <i class="far fa-circle"></i>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p>JavaScript</p>
+                                </div>
+
+                                <div class="col-md-9">
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="far fa-circle"></i>
+                                    <i class="far fa-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div id="portfolio" class="row section" style="height: 1000px">
-            <div class="col-md-12">
-                <h2>Portfolio</h2>
+    <div id="portfolio-div">
+        <div class="container">
+            <div id="portfolio" class="row section">
+                <div class="col-md-12">
+                    <h2 class="section-header">Portfolio</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="portfolio-image" src="assets/images/lets-live.png" alt="Let's Live Web App">
+                        </div>
+
+                        <div class="col-md-4">
+                            <img class="portfolio-image" src="assets/images/himym-trivia.png" alt="How I Met Yout Mother Trivia">
+                        </div>
+
+                        <div class="col-md-4">
+                            <img class="portfolio-image" src="assets/images/candy-guesser.png" alt="Candy Guesser Game">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div id="contact" class="row section" style="height: 1000px">
-            <div class="col-md-12">
-                <h2>Contact</h2>
+    <div id="contact-div">
+        <div class="container">
+            <div id="contact" class="row section" style="height: 1000px">
+                <div class="col-md-12">
+                    <h2 class="section-header">Contact</h2>
+                </div>
             </div>
         </div>
     </div>
