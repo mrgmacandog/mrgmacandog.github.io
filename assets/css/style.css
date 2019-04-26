@@ -24,8 +24,8 @@
     margin-bottom: 25px;
 }
 
-#about-div, #contact-div {
-    background-color: #ccc;
+#about, #contact {
+    background-color: #DDD;
 }
 
 #my-photo {
@@ -34,4 +34,8 @@
 
 .portfolio-image {
     width: 100%;
+}
+
+.portfolio-info {
+    height: 100%;
 }

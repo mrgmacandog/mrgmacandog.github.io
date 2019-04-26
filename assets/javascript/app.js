@@ -2,10 +2,10 @@
 "use strict";
 
 // When the page is ready
-$(document).ready(function () {
+$(document).ready(function() {
     // Animate scroll to 
     function ascrollto(id) {
-        let etop = $('#' + id).offset().top - 81;
+        let etop = $('#' + id).offset().top - 56;
         $('html, body').animate({
         scrollTop: etop
         }, 250);
@@ -14,11 +14,11 @@ $(document).ready(function () {
     // Update nav bar link depending on scroll position
     function checkScrollPos() {
         // Top of about section including margin
-        // let aboutTop = $("#about").offset().top - 82;
+        // let aboutTop = $("#about").offset().top - 81;
         // Top of portfolio section including margin
-        let portfolioTop = $("#portfolio").offset().top - 82;
+        let portfolioTop = $("#portfolio").offset().top - 81;
         // Top of contact section including margin
-        let contactTop = $("#contact").offset().top - 82;
+        let contactTop = $("#contact").offset().top - 81;
         // Top of window
         let windowpos = $(window).scrollTop();
         console.log(windowpos);
@@ -43,7 +43,7 @@ $(document).ready(function () {
     }
 
     // When a navbar link is clicked
-    $(".nav-link").on("click", function () {
+    $(".nav-link").on("click", function() {
         // Save section clicked
         let section = this.text.toLowerCase();
         // Scroll to section
@@ -51,11 +51,35 @@ $(document).ready(function () {
     });
 
     // When the user scrolls
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         // Check scroll position
         checkScrollPos();
     });
 
+    // TODO change to click for mobile
+    // When a portfolio image is moused over
+    $(".portfolio-image").mouseover(function() {
+        // Hide the image
+        $(this).fadeOut(200, function() {
+            // Show the information
+            $(this).next().fadeIn(200);
+        });
+        
+    });
+
+    // TODO change to click for mobile
+    // When the information is moused out
+    $(".portfolio-info").mouseout(function() {
+        // Hide the information
+        $(this).fadeOut(200, function() {
+            $(this).prev().fadeIn(200);
+        });
+        
+    });
+
     // Check scroll position when the document is ready
     checkScrollPos();
+
+    // Hide portfolio item info
+    $(".portfolio-info").hide();
 });
