@@ -2,12 +2,12 @@
 "use strict";
 
 // When the page is ready
-$(document).ready(function() {
+$(document).ready(function () {
     // Animate scroll to 
     function ascrollto(id) {
         let etop = $('#' + id).offset().top - 56;
         $('html, body').animate({
-        scrollTop: etop
+            scrollTop: etop
         }, 250);
     }
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
     }
 
     // When a navbar link is clicked
-    $(".nav-link").on("click", function() {
+    $(".nav-link").on("click", function () {
         // Save section clicked
         let section = this.text.toLowerCase();
         // Scroll to section
@@ -51,35 +51,43 @@ $(document).ready(function() {
     });
 
     // When the user scrolls
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         // Check scroll position
         checkScrollPos();
     });
 
     // TODO change to click for mobile
     // When a portfolio image is moused over
-    $(".portfolio-image").mouseover(function() {
+    $(".portfolio-image").on("mouseover", function () {
         // Hide the image
-        $(this).fadeOut(200, function() {
+        $(this).fadeOut(200, function () {
             // Show the information
             $(this).next().fadeIn(200);
         });
-        
+
+        // $(this).hide();
+        // $(this).next().show();
     });
 
     // TODO change to click for mobile
     // When the information is moused out
-    $(".portfolio-info").mouseout(function() {
+    $(".portfolio-info").on("mouseleave", function () {
         // Hide the information
-        $(this).fadeOut(200, function() {
+        $(this).fadeOut(200, function () {
+            // Shoe the image
             $(this).prev().fadeIn(200);
         });
-        
+
+        // $(this).hide();
+        // $(this).prev().show();
     });
 
     // Check scroll position when the document is ready
     checkScrollPos();
 
-    // Hide portfolio item info
-    $(".portfolio-info").hide();
+    $(".portfolio-info").css("height", `${$(".portfolio-image").height()}px`);
+    $(window).resize(function () {
+        $(".portfolio-info").css("height", `${$(".portfolio-image").height()}px`);
+    });
+
 });
